@@ -46,7 +46,7 @@ class FreelancerProject {
     }
 }
 
-public class Main {
+public class FreelancerProject {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         FreelancerProject project = new FreelancerProject();
@@ -59,6 +59,7 @@ public class Main {
             System.out.println("2. View Project Details");
             System.out.println("3. Exit");
             System.out.print("Enter your choice: ");
+
             choice = sc.nextInt();
 
             switch (choice) {
@@ -71,7 +72,8 @@ public class Main {
                     if (added) {
                         project.displayProject();
                     } else {
-                        System.out.println("Please add a project first!");
+                        System.out.println(
+                                "Please add a project first!");
                     }
                     break;
 
@@ -80,7 +82,8 @@ public class Main {
                     break;
 
                 default:
-                    System.out.println("Invalid choice! Try again.");
+                    System.out.println(
+                            "Invalid choice! Try again.");
             }
         } while (choice != 3);
 
